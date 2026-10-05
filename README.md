@@ -40,7 +40,7 @@ Below is a comparison of major commercial gaming platforms and cloud ecosystem p
 
 ## 🛠️ Open-Source Hardware & Firmware Projects
 
-The open-source hardware and embedded gaming movement is thriving. Below is a list of top open-source console projects, custom operating systems, and FPGA architectures, sorted by **GitHub Stars (Descending)**:
+The open-source hardware and embedded gaming movement is thriving. Below is a list of top open-source console projects, custom operating systems, and FPGA architectures, sorted by **GitHub_Stars (Descending)**:
 
 ### 🌟 Open-Source Repository Leaderboard
 
@@ -103,7 +103,7 @@ We welcome community contributions! To add or update an entry:
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Edit `README.md`** following the structured tabular & stargazers badge format.
-3. ⚡ Ensure all links, pricing details, free tier limits, and star badges are accurate.
+3. ⚡ Ensure all links, pricing details, free tier limits, and Stars_Badges are accurate.
 4. 📬 Submit a **Pull Request** with a summary of your changes.
 
 ---
