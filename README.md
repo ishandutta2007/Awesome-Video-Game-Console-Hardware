@@ -1,213 +1,121 @@
-# Awesome-Video-Game-Console-Hardware
+![Awesome Video Game Console Hardware Banner](assets/banner.svg)
 
-## Top Video Game Console Hardware Ecosystem
+# 🎮 Awesome Video Game Console Hardware
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
+> 🚀 **Curated directory of SaaS gaming platforms, commercial console hardware, open-source RISC-V/FPGA gaming projects, and custom retro-gaming firmware.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Handheld Gaming, Homebrew Hardware & Open-Source Console Platforms*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial consoles** and **open-source hardware projects** for **Video Game Console Hardware**. These range from mass-market handhelds and home consoles to fully open-source designs where the CPU, GPU, and PCB are all available under permissive licenses.
-
-
-
-**Examples** include Xbox Series S, Xbox Series X, PlayStation 5 Digital Edition, Nintendo Switch Lite, Steam Deck, ASUS ROG Ally, PlayStation 4, Nintendo Switch, Ayaneo 2, and Logitech G Cloud (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source hardware movement for gaming is thriving. **wueHans** demonstrates a full-stack RISC-V console with custom GPU and SoC , **RISCBoy** builds a Game Boy Advance-like handheld from scratch , and **gkv4** runs a custom OS on STM32MP2 with hardware-accelerated 3D . On the firmware side, **REG Linux** provides an immutable retro-gaming OS for dozens of SoCs , while **MiyooCFW** extends the life of budget handhelds . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Xbox Series S](https://www.xbox.com/consoles/xbox-series-s)**  
-
-  Microsoft's all-digital entry console with 1440p gaming, Quick Resume, and backward compatibility. **The most affordable current-gen console** — ideal for Game Pass subscribers.
-
-
-
-- **[Xbox Series X](https://www.xbox.com/consoles/xbox-series-x)**  
-
-  Microsoft's flagship console with 4K gaming, 4K Blu-ray drive, and 12 TFLOPS GPU. **The most powerful console of the ninth generation**.
-
-
-
-- **[PlayStation 5 Digital Edition](https://www.playstation.com/ps5/)**  
-
-  Sony's all-digital PS5 with the same performance as the disc model. **The entry point to PlayStation exclusives** without the disc drive premium.
-
-
-
-- **[Nintendo Switch Lite](https://www.nintendo.com/switch/lite/)**  
-
-  Handheld-only Switch with integrated controls and lighter weight. **The most portable Switch** — no TV output, but excellent for travel.
-
-
-
-- **[Steam Deck](https://www.steamdeck.com/)**  
-
-  Valve's PC gaming handheld running SteamOS (Arch Linux-based). **The most influential handheld PC** — verified compatibility program, excellent controls, and extensive community support.
-
-
-
-- **[ASUS ROG Ally](https://rog.asus.com/gaming-handhelds/rog-ally/)**  
-
-  Windows 11 gaming handheld with AMD Z1 Extreme APU and 120Hz display. **Best for Game Pass and Windows-native games**.
-
-
-
-- **[PlayStation 4](https://www.playstation.com/ps4/)**  
-
-  Sony's previous-gen console with massive library and continued support. **The value option for PlayStation exclusives** and budget gaming.
-
-
-
-- **[Nintendo Switch](https://www.nintendo.com/switch/)**  
-
-  Hybrid console with TV and handheld modes. **The best-selling console of its generation** with Nintendo's exclusive library.
-
-
-
-- **[Ayaneo 2](https://www.ayaneo.com/)**  
-
-  Premium Windows gaming handheld with Ryzen 6800U, 1200p display, and sleek design. **The enthusiast's alternative to Steam Deck**.
-
-
-
-- **[Logitech G Cloud](https://www.logitechg.com/en-us/products/cloud-gaming/g-cloud.940-000177.html)**  
-
-  Cloud gaming handheld optimized for Xbox Cloud Gaming, GeForce NOW, and remote play. **Best for streaming-focused gamers** who don't need local processing power.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[wueHans](https://preview.riscv-europe.org/summit/2026/media/proceedings/2026-06-11-RISC-V-Summit-Europe-17h15-HAGER-slides.pdf)**  
-
-  **Fully open-source RISC-V gaming console and SoC architecture** from University of Würzburg . Built on **ULX3S FPGA** with Lattice ECP5 (85K LUTs) and 32 MB SDRAM. Features **custom 2D GPU** with dual framebuffer, colormapping, and sprite rendering; **custom APU** with 8-channel mono/stereo audio; **VexRiscv CPU** running at 50 MHz with hardware floating-point. Complete **LLVM-based toolchain** with newlib standard library, custom bootloader, and high-level **Game Development Framework API**. Validated through 48-hour game jam with three teams. Achieves **640×480 at 60 FPS**, runs **~10 hours on battery**, and fits in a **3D-printed case** with dual SNES controllers . **The most complete open-source console hardware project** — CPU, GPU, PCB, and case all open.
-
-
-
-- **[RISCBoy](https://github.com/Wren6991/RISCBoy)**  
-
-  **Open-source portable games console designed from scratch** — RISC-V CPU, raster graphics pipeline, memory controllers, and PCB layout in KiCad . Written in synthesisable **Verilog 2005** targeting iCE40-HX8k FPGA (7680 logic elements). CPU supports **RV32IMC instruction set**, passes RISC-V compliance suite and riscv-formal verification. Described as "a Gameboy Advance from a parallel universe where RISC-V existed in 2001." **The most elegant open-source handheld design** — fully documented with formal verification.
-
-
-
-- **[gkv4](https://github.com/jncronin/gk)**  
-
-  **Open-source handheld console running custom OS (gkos) on STM32MP2 MPU** . Features **dual Cortex-A35 cores + Cortex-M33**, **1 GiB LPDDR4 RAM**, **800×480 touchscreen**, **10,000 mAh battery**, and **WiFi/Bluetooth via M.2**. Custom OS supports **SMP scheduler, pthread, POSIX syscalls**, and **hardware-accelerated OpenGL via etnaviv driver**. Emulator support includes NES, SNES, PS1, N64 (GPU-accelerated), Atari ST, and DOSBox-X. Native ports of **Neverball, Tuxracer, Doom, Quake, and Descent**. **Power draw typically under 1.5W** — exceptional battery life . **The most capable open-source handheld** with near-instant boot and modern hardware.
-
-
-
-- **[RetroESP32-P4](https://github.com/giltal/RetroESP32-P4)**  
-
-  **Open-source retro-gaming platform on ESP32-P4 microcontroller** — dual-core RISC-V, **no GPU, no Linux, bare-metal** . Runs **15 emulators** including SNES, Genesis, and **NeoGeo at 60 FPS**. Native apps from PSRAM including **full Doom and Quake**. **Two builds from one firmware**: 4.3" touchscreen handheld or HDMI console. Auto-detects any USB gamepad. **Everything included** — firmware, source, SD files, PCB, schematic, and case STLs . **The most accessible entry point** for building an open-source handheld.
-
-
-
-- **[Uzebox](https://github.com/ry755/ushell)**  
-
-  **Open-source 8-bit game console** with active community and homebrew scene . **uShell** is a work-in-progress operating system for Uzebox with desktop environment and app loading from SD card . Multiple games and demos available including Gorillas, Lunar Lander, 2048, and F1 Race . **The most established open-source console ecosystem** with decades of community development.
-
-
-
-- **[REG Linux](https://github.com/REG-Linux/REG-Linux)**  
-
-  **Open-source immutable retro-gaming OS** for consoles, handhelds, and mini-PCs . Built on **Buildroot**, systemd-free, with read-only root filesystem and `/userdata` persistence. Runs on **ARM, AArch64, RISC-V 64-bit, and x86-64**. Out-of-the-box support for **dozens of emulators and cores**. **The easiest way to turn any compatible board into a console** — write to USB stick or SD card and boot .
-
-
-
-- **[MiyooCFW](https://github.com/TriForceX/MiyooCFW)**  
-
-  **Custom firmware for budget handhelds** including BittBoy, PocketGo, PowKiddy V90/Q90/Q20 . Extensive emulator support from **RetroArch, PCSX-ReARMed, MAME4all, DOSBox**, plus **ScummVM, OpenTyrian, Undertale, and OpenLara**. Multiple skins and frontends including Simple Menu and Coverflow. **The best way to extend the life of inexpensive handhelds** .
-
-
-
-- **[FPGA-DENDY-SE](https://github.com/andkorzh/FPGA-DENDY-SE)**  
-
-  **Clock-precise FPGA design for 8-bit game console** based on Cyclone I EP1C3T100C8 . Supports composite video output and optional RGB expansion. Audio via PWM modulators. **For enthusiasts wanting cycle-accurate hardware reproduction** of classic consoles.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **ares** — Multi-system emulator focused on **accuracy and preservation**, descendant of higan and bsnes . Supports NES through PlayStation with save states, run-ahead, rewind, and pixel shaders. **The most accurate software emulator** for preservation-focused projects.
-
-- **higan** — Multi-system emulator with **uncompromising focus on accuracy and code readability** . Emulates Famicom through Neo Geo Pocket. **The reference implementation** for cycle-accurate emulation.
-
-- **RetroESP32** — Original ESP32-based retro gaming platform, predecessor to RetroESP32-P4.
-
-
-
-**Frameworks for building custom console hardware**: Combine **wueHans** for a complete RISC-V SoC reference with custom GPU and APU , **RISCBoy** for elegant Verilog design with formal verification , and **gkv4** for modern MPU-based handheld with custom OS . For software, **REG Linux** provides an immutable OS foundation , **MiyooCFW** extends budget hardware , and **ares** or **higan** provide accuracy-focused emulation cores . Note that true mass-market console hardware with custom silicon, manufacturing scale, and first-party ecosystems remains fundamentally proprietary; open-source projects provide strong foundations for homebrew, preservation, and hardware sovereignty that require significant engineering investment for production.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Open-source console hardware projects require **significant engineering expertise** in FPGA, PCB design, and embedded systems. Most are research prototypes or enthusiast projects, not consumer products.
-
-- **Commercial console hardware is proprietary** — jailbreaking or modifying may void warranties and violate terms of service. Open-source projects provide alternatives, not replacements for mass-market consoles.
-
-- The open-source ecosystem provides strong foundations for **homebrew, preservation, and hardware sovereignty**, but manufacturing scale, first-party software, and ecosystem lock-in remain primarily commercial advantages.
-
-
+A comprehensive guide for retro-gaming enthusiasts, embedded systems engineers, hardware hackers, and preservation advocates exploring both commercial platforms and open-source console architectures.
 
 ---
 
+## 📚 Table of Contents
+- [🏢 Commercial Consoles & SaaS Platforms](#-commercial-consoles--saas-platforms)
+- [🛠️ Open-Source Hardware & Firmware Projects](#%EF%B8%8F-open-source-hardware--firmware-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
+---
 
-**Made for retro gaming enthusiasts, FPGA developers, hardware hackers, and preservation advocates.**  
+## 🏢 Commercial Consoles & SaaS Platforms
 
-Let's make console hardware more open, transparent, and accessible.
+> 📊 **Market Overview**: The global video game console and cloud gaming hardware sector is estimated at **$200+ Billion** in market size. The market is **highly concentrated** (winner-take-all dynamics dominated by tech giants Microsoft, Sony, Nintendo, and Valve), with immense barriers to entry surrounding custom silicon manufacturing, OS development, and exclusive content rights.
+
+Below is a comparison of major commercial gaming platforms and cloud ecosystem providers, sorted by **Company Size / Valuation (Descending)**:
+
+| Product / Platform 🎮 | Company & Market Size 📈 | Starting Pricing 💰 | Free Tier & Free Trial Limits 🎁 | Key Features & Focus 🌟 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Xbox Series X](https://www.xbox.com/consoles/xbox-series-x)** / **[Series S](https://www.xbox.com/consoles/xbox-series-s)** | **Microsoft Corporation**<br>• Market Cap: **$3.1 Trillion**<br>• Revenue: **$245 Billion/yr** | **$299.99 MSRP** (Series S)<br>**$499.99 MSRP** (Series X) | **Free Xbox Network Account**:<br>• Free multiplayer for free-to-play games (e.g., *Fortnite*, *Apex Legends*)<br>• Free Xbox Cloud Gaming access for *Fortnite* without subscription | 12 TFLOPS 4K gaming (Series X) & 1440p digital budget gaming (Series S). Features Quick Resume and backwards compatibility. |
+| **[PlayStation 5 Digital](https://www.playstation.com/ps5/)** / **[PS4](https://www.playstation.com/ps4/)** | **Sony Group Corporation**<br>• Market Cap: **$105 Billion**<br>• Revenue: **$88 Billion/yr** | **$299.99 MSRP** (PS4)<br>**$449.99 MSRP** (PS5 Digital) | **Free PlayStation Network Account**:<br>• Free online multiplayer for F2P titles (*Warzone*, *Genshin Impact*)<br>• **14-day Free Trial** for PlayStation Plus Premium tier | High-speed custom NVMe SSD, DualSense haptic feedback, and exclusive PlayStation ecosystem titles. |
+| **[Nintendo Switch](https://www.nintendo.com/switch/)** / **[Switch Lite](https://www.nintendo.com/switch/lite/)** | **Nintendo Co., Ltd.**<br>• Market Cap: **$65 Billion**<br>• Revenue: **$11 Billion/yr** | **$199.99 MSRP** (Lite)<br>**$299.99 MSRP** (Standard) | **Free Nintendo Account**:<br>• Free access to F2P titles (*Ninjala*, *Pokémon UNITE*)<br>• **7-day Free Trial** for Nintendo Switch Online subscription | Hybrid TV/handheld console and dedicated portable handheld powered by custom NVIDIA Tegra SoC. |
+| **[ASUS ROG Ally](https://rog.asus.com/gaming-handhelds/rog-ally/)** | **ASUSTeK Computer Inc.**<br>• Market Cap: **$15 Billion**<br>• Revenue: **$16 Billion/yr** | **$599.99** (Z1 Model)<br>**$699.99** (Z1 Extreme) | **Bundled 90-day Free Trial**:<br>• Includes 3 full months of Xbox Game Pass Ultimate with cloud gaming access | Windows 11 handheld gaming PC with 120Hz VRR screen and AMD Ryzen Z1 Extreme APU. |
+| **[Logitech G Cloud](https://www.logitechg.com/en-us/products/cloud-gaming/g-cloud.940-000177.html)** | **Logitech International S.A.**<br>• Market Cap: **$13 Billion**<br>• Revenue: **$4.3 Billion/yr** | **$349.99 MSRP** | **Bundled 30-day Free Trials**:<br>• 1-month GeForce NOW Priority trial<br>• 1-month Xbox Game Pass Ultimate trial<br>• Free GeForce NOW tier (1-hr sessions) | Lightweight cloud-streaming handheld with 1080p 7-inch display and 12+ hour battery life. |
+| **[Steam Deck](https://www.steamdeck.com/)** | **Valve Corporation**<br>• Valuation: **$8 Billion** (Est. Private)<br>• Revenue: **$13 Billion/yr** | **$399.00** (256GB LCD)<br>**$549.00** (512GB OLED) | **Free Steam Account**:<br>• Lifetime free access to 4,000+ free-to-play games (*Counter-Strike 2*, *Dota 2*)<br>• Free cloud save storage | Open Linux-based handheld PC (SteamOS) with custom AMD Aerith/Sephiroth APU and Proton compatibility layer. |
+| **[Ayaneo 2](https://www.ayaneo.com/)** | **AYANEO Co., Ltd.**<br>• Valuation: **~$50 Million** (Private SME)<br>• Revenue: **~$25 Million/yr** | **$849.00** (6800U Model) | **30-day Evaluation Mode**:<br>• Ships with Windows 11 Home trial/evaluation mode supporting full local execution | Premium handheld PC featuring AMD Ryzen 7 6800U, borderless glass screen, and hall-effect joysticks. |
+
+---
+
+## 🛠️ Open-Source Hardware & Firmware Projects
+
+The open-source hardware and embedded gaming movement is thriving. Below is a list of top open-source console projects, custom operating systems, and FPGA architectures, sorted by **GitHub Stars (Descending)**:
+
+### 🌟 Open-Source Repository Leaderboard
+
+1. **[OpenEmu/OpenEmu](https://github.com/OpenEmu/OpenEmu)** [![Stars](https://img.shields.io/github/stars/OpenEmu/OpenEmu?style=social&color=white)](https://github.com/OpenEmu/OpenEmu/stargazers)  
+   🍎 *Modular open-source game console emulator designed for macOS.* Native Cocoa interface with core plugins for classic hardware platforms (NES, SNES, Genesis, N64, PS1).
+
+2. **[libretro/RetroArch](https://github.com/libretro/RetroArch)** [![Stars](https://img.shields.io/github/stars/libretro/RetroArch?style=social&color=white)](https://github.com/libretro/RetroArch/stargazers)  
+   🕹️ *Reference frontend for the Libretro API.* Cross-platform open-source engine powering emulators, game engines, and media players across microcontrollers, handhelds, and PCs.
+
+3. **[RetroPie/RetroPie-Setup](https://github.com/RetroPie/RetroPie-Setup)** [![Stars](https://img.shields.io/github/stars/RetroPie/RetroPie-Setup?style=social&color=white)](https://github.com/RetroPie/RetroPie-Setup/stargazers)  
+   🥧 *Turn Raspberry Pi, ODroid, or PC into a retro-gaming console.* Built upon Raspbian, EmulationStation, and RetroArch with automated system management.
+
+4. **[MiSTer-devel/Main_MiSTer](https://github.com/MiSTer-devel/Main_MiSTer)** [![Stars](https://img.shields.io/github/stars/MiSTer-devel/Main_MiSTer?style=social&color=white)](https://github.com/MiSTer-devel/Main_MiSTer/stargazers)  
+   ⚙️ *Open-source FPGA gaming platform based on DE10-Nano board.* Cycle-accurate hardware re-creation of classic game consoles, arcade hardware, and home computers.
+
+5. **[batocera-linux/batocera.linux](https://github.com/batocera-linux/batocera.linux)** [![Stars](https://img.shields.io/github/stars/batocera-linux/batocera.linux?style=social&color=white)](https://github.com/batocera-linux/batocera.linux/stargazers)  
+   🐧 *Open-source retro-gaming OS distribution.* Works as a plug-and-play bootable firmware on single-board computers, handhelds, and x86_64 PCs.
+
+6. **[ares-emulator/ares](https://github.com/ares-emulator/ares)** [![Stars](https://img.shields.io/github/stars/ares-emulator/ares?style=social&color=white)](https://github.com/ares-emulator/ares/stargazers)  
+   🎯 *Multi-system open-source emulator focused on accuracy and preservation.* Descendant of higan and bsnes supporting 24 classic console systems.
+
+7. **[higan-emu/higan](https://github.com/higan-emu/higan)** [![Stars](https://img.shields.io/github/stars/higan-emu/higan?style=social&color=white)](https://github.com/higan-emu/higan/stargazers)  
+   👾 *Cycle-accurate multi-system emulator.* Uncompromising focus on exact hardware emulation precision for Famicom, Super Famicom, Game Boy, and Neo Geo Pocket.
+
+8. **[TriForceX/MiyooCFW](https://github.com/TriForceX/MiyooCFW)** [![Stars](https://img.shields.io/github/stars/TriForceX/MiyooCFW?style=social&color=white)](https://github.com/TriForceX/MiyooCFW/stargazers)  
+   📱 *Custom open-source firmware for budget handheld consoles.* Optimized OS for Miyoo, BittBoy, PocketGo, and PowKiddy V90/Q90/Q20 handhelds.
+
+9. **[Wren6991/RISCBoy](https://github.com/Wren6991/RISCBoy)** [![Stars](https://img.shields.io/github/stars/Wren6991/RISCBoy?style=social&color=white)](https://github.com/Wren6991/RISCBoy/stargazers)  
+   💎 *Open-source portable games console designed from scratch in Verilog 2005.* Features custom RV32IMC RISC-V CPU, custom hardware graphics pipeline, KiCad PCB layouts, and formal verification targeting iCE40 FPGAs.
+
+10. **[uzebox/uzebox](https://github.com/uzebox/uzebox)** [![Stars](https://img.shields.io/github/stars/uzebox/uzebox?style=social&color=white)](https://github.com/uzebox/uzebox/stargazers)  
+    🕹️ *Open-source 8-bit game console design based on AVR ATmega644.* Generates video/audio on-the-fly with custom kernel, SD-card loader, and SNES controller interface.
+
+11. **[clockworkpi/GameShell](https://github.com/clockworkpi/GameShell)** [![Stars](https://img.shields.io/github/stars/clockworkpi/GameShell?style=social&color=white)](https://github.com/clockworkpi/GameShell/stargazers)  
+    📟 *Modular open-source retro handheld console hardware.* Features Linux OS, modular mainboard, keypad, stereo speakers, and 3D-printable modular shell.
+
+12. **[jncronin/gk](https://github.com/jncronin/gk)** [![Stars](https://img.shields.io/github/stars/jncronin/gk?style=social&color=white)](https://github.com/jncronin/gk/stargazers)  
+    🚀 *Open-source handheld console running custom OS (gkos) on STM32MP2 MPU.* Dual Cortex-A35 + Cortex-M33, 1 GiB LPDDR4, 800×480 screen, and etnaviv GPU hardware acceleration.
+
+13. **[giltal/RetroESP32-P4](https://github.com/giltal/RetroESP32-P4)** [![Stars](https://img.shields.io/github/stars/giltal/RetroESP32-P4?style=social&color=white)](https://github.com/giltal/RetroESP32-P4/stargazers)  
+    ⚡ *Bare-metal retro-gaming platform on dual-core RISC-V ESP32-P4.* Runs 15 emulators (SNES, Genesis, NeoGeo at 60 FPS) without Linux or GPU dependencies.
+
+14. **[REG-Linux/REG-Linux](https://github.com/REG-Linux/REG-Linux)** [![Stars](https://img.shields.io/github/stars/REG-Linux/REG-Linux?style=social&color=white)](https://github.com/REG-Linux/REG-Linux/stargazers)  
+    📦 *Immutable open-source retro-gaming OS.* Built on systemd-free Buildroot for ARM, AArch64, RISC-V 64-bit, and x86_64 single-board computers and handhelds.
+
+15. **[ry755/ushell](https://github.com/ry755/ushell)** [![Stars](https://img.shields.io/github/stars/ry755/ushell?style=social&color=white)](https://github.com/ry755/ushell/stargazers)  
+    💻 *Desktop OS environment shell for Uzebox console.* Enables window management and application launching directly on 8-bit microcontrollers.
+
+16. **[andkorzh/FPGA-DENDY-SE](https://github.com/andkorzh/FPGA-DENDY-SE)** [![Stars](https://img.shields.io/github/stars/andkorzh/FPGA-DENDY-SE?style=social&color=white)](https://github.com/andkorzh/FPGA-DENDY-SE/stargazers)  
+    🔴 *Cycle-accurate FPGA implementation of 8-bit console hardware.* Written for Cyclone I FPGA with composite video out and PWM sound synthesis.
+
+17. **[wueHans RISC-V Console Architecture](https://preview.riscv-europe.org/summit/2026/media/proceedings/2026-06-11-RISC-V-Summit-Europe-17h15-HAGER-slides.pdf)**  
+    🎓 *Fully open-source RISC-V gaming console and SoC architecture from University of Würzburg.* Built on ULX3S FPGA with custom 2D GPU, 8-channel APU, VexRiscv CPU, LLVM toolchain, and custom 3D printed housing.
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! To add or update an entry:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Edit `README.md`** following the structured tabular & stargazers badge format.
+3. ⚡ Ensure all links, pricing details, free tier limits, and star badges are accurate.
+4. 📬 Submit a **Pull Request** with a summary of your changes.
+
+---
+
+## ⚠️ Disclaimer
+
+- **Community Curated**: This repository is a community-maintained resource list and does not constitute an endorsement.
+- **Hardware Engineering**: Open-source hardware projects require expertise in FPGA programming (Verilog/VHDL), PCB design (KiCad), and embedded system development.
+- **Intellectual Property**: Commercial video game hardware, trademarks, and BIOS files are proprietary property of their respective owners.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for Retro Gamers, FPGA Engineers, and Open Hardware Advocates.</b>
+</p>
