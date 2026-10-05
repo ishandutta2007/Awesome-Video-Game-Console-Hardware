@@ -2,9 +2,7 @@
 
 # 🎮 Awesome Video Game Console Hardware
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-sqaare&logo=githu" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38/media/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > 🚀 **Curated directory of SaaS gaming platforms, commercial console hardware, open-source RISC-V/FPGA gaming projects, and custom retro-gaming firmware.**
 
@@ -16,7 +14,9 @@ A comprehensive guide for retro-gaming enthusiasts, embedded systems engineers, 
 - [🏢 Commercial Consoles & SaaS Platforms](#-commercial-consoles--saas-platforms)
 - [🛠️ Open-Source Hardware & Firmware Projects](#%EF%B8%8F-open-source-hardware--firmware-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
 
 ---
 
@@ -108,11 +108,28 @@ We welcome community contributions! To add or update an entry:
 
 ---
 
+## 💖 Support & Sponsorship
+
+Thank you for visiting and supporting open-source gaming hardware projects! If you find this curated list valuable, please consider supporting the project:
+
+- ⭐ **Star** this repository to help others discover it!
+- 🍴 **Fork** it to keep your own reference copy.
+- 📢 **Share** it with fellow hardware hackers, retro gamers, and FPGA developers.
+- ☕ **Sponsor / Buy me a coffee**: If you'd like to support ongoing open-source research and documentation, feel free to sponsor via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
 ## ⚠️ Disclaimer
 
 - **Community Curated**: This repository is a community-maintained resource list and does not constitute an endorsement.
 - **Hardware Engineering**: Open-source hardware projects require expertise in FPGA programming (Verilog/VHDL), PCB design (KiCad), and embedded system development.
 - **Intellectual Property**: Commercial video game hardware, trademarks, and BIOS files are proprietary property of their respective owners.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Video-Game-Console-Hardware&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Video-Game-Console-Hardware&type=date&legend=top-left)
 
 ---
 
